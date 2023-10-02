@@ -27,7 +27,7 @@ app.get("/api/all", async (req, res) => {
         console.log(error);
       } else {
         let mov = files.map((file) => {
-          return `http://localhost:9000/api/${file}`;
+          return `https://backends-sqg9.onrender.com/api/${file}`;
         });
 
         res.json(mov);

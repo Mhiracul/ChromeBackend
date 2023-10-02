@@ -28,8 +28,8 @@ router.post("/", async (req, res) => {
     console.log(text);
     let Message = {
       message: "file uploaded successfully",
-      url: `http://localhost:9000/api/${videoPath}`,
-      transcript: `http://locahost:9000/`,
+      url: `https://backends-sqg9.onrender.com/api/${videoPath}`,
+      transcript: `https://backends-sqg9.onrender.com/`,
       status: 200,
     };
     res.json(Message);
